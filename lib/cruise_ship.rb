@@ -7,5 +7,11 @@
 # }
  
  def select_winner(passengers)
-   "Amanda Presley"
- end
+  winner = ""
+  passengers.each do |suite, name|
+    if suite == :suite_a && name.start_with?("A")
+      winner = name
+  end
+  select_winner
+  end
+end

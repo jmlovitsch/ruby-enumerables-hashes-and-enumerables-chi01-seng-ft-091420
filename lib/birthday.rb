@@ -5,7 +5,7 @@
 # }
 
 def happy_birthday(birthday_kids)
-  puts "Happy Birthday Timmy! You are now 9 years old!\nHappy Birthday Sarah! You are now 6 years old!\nHappy Birthday Amanda! You are now 27 years old!\n"
+  birthday_kids.each do |kids_name, age|
+    puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
+  end
 end
-
-#this lab does not seem to work.
